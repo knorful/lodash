@@ -19,6 +19,9 @@ const _ = {
     else if (num >= end) return false;
     else return true;
   },
+  words(str) {
+    return str.split(" ");
+  },
 };
 
 // Do not write or modify code below this line.
