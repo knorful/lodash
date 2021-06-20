@@ -46,6 +46,14 @@ const _ = {
     if (obj[key]) return true;
     else return false;
   },
+  invert(obj) {
+    let newObj = {};
+
+    for (let key in obj) {
+      newObj[obj[key]] = key;
+    }
+    return newObj;
+  },
 };
 
 // Do not write or modify code below this line.
