@@ -65,6 +65,13 @@ const _ = {
     if (!num) return arr.slice(1);
     return arr.slice(num);
   },
+  dropWhile(arr, predicate) {
+    for (let i = 0; i < arr.length; i++) {
+      if (!predicate(arr[i], i, arr)) {
+        return arr.slice(i);
+      }
+    }
+  },
 };
 
 // Do not write or modify code below this line.
