@@ -72,6 +72,14 @@ const _ = {
       }
     }
   },
+  chunk(arr, size) {
+    let chunks = [];
+
+    for (let i = 0; i < arr.length; i += size) {
+      chunks.push(arr.slice(i, i + size));
+    }
+    return chunks;
+  },
 };
 
 // Do not write or modify code below this line.
