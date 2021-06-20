@@ -61,6 +61,10 @@ const _ = {
       }
     }
   },
+  drop(arr, num) {
+    if (!num) return arr.slice(1);
+    return arr.slice(num);
+  },
 };
 
 // Do not write or modify code below this line.
