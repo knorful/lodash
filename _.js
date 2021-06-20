@@ -42,6 +42,10 @@ const _ = {
       );
     }
   },
+  has(obj, key) {
+    if (obj[key]) return true;
+    else return false;
+  },
 };
 
 // Do not write or modify code below this line.
