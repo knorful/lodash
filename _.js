@@ -54,6 +54,13 @@ const _ = {
     }
     return newObj;
   },
+  findKey(obj, predicate) {
+    for (let key in obj) {
+      if (predicate(obj[key])) {
+        return key;
+      }
+    }
+  },
 };
 
 // Do not write or modify code below this line.
